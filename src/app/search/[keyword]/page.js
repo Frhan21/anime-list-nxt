@@ -13,7 +13,7 @@ const Page = async ({ params }) => {
       <section>
         <Header
           title={`Hasil pencarian ${keyword}....`}
-          f
+          linkRef="/"
         />
         <AnimeList api={searchAnime} />
       </section>
