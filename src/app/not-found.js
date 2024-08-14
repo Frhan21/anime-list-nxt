@@ -1,5 +1,7 @@
 "use client";
+import Link from "next/link";
 import { FileSearch } from "@phosphor-icons/react";
+
 const NotFound = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const NotFound = () => {
             Not Found
           </span>
         </div>
+          <Link className="text-color-dark p-2 rounded-md text-sm font-light mt-4 bg-color-accent border border-color-accent hover:bg-color-dark hover:text-color-accent transition-all" href="/">Kembali</Link>
       </div>
     </>
   );
