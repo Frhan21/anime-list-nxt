@@ -15,7 +15,7 @@ const Page = async () => {
           linkTitle="Lihat selengkapnya"
           linkRef="/populer"
         />
-        <AnimeList api={topAnime} />
+        <AnimeList api={topAnime}/>
       </section>
     </>
   );
