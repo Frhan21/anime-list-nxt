@@ -4,14 +4,16 @@ import { MagnifyingGlass } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:3573535464.
+
 const InputSearch = () => {
   const searchRef = useRef();
   const router = useRouter();
   const handleSearchInput = (event) => {
+    const keyword = searchRef.current.value;
+    if(!keyword) return; 
     if (event.key === 'Enter' || event.type === 'click') {
       event.preventDefault();
-      const keyword = searchRef.current.value;
+      
       router.push(`/search/${keyword}`);
     }
   };
