@@ -1,4 +1,4 @@
-import { authUserSession } from "@/app/libs/user.libs";
+import { authUserSession } from "@/app/libs/user-libs";
 import Image from "next/image";
 
 const Page = async () => {
