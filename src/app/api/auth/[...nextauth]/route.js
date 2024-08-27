@@ -8,7 +8,13 @@ export const authOption = {
             clientSecret:process.env.GITHUB_SECRET
         })
     ],
-    secret:process.env.NEXTAUTH_SECRET
+    secret:process.env.NEXTAUTH_SECRET,
+    callbacks: {
+        async redirect({ url, baseUrl }) {
+            // Redirect to homepage after login/logout
+            return baseUrl;
+        }
+    }
 }
 const handler = NextAuth(authOption);
 

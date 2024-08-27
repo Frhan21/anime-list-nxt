@@ -7,8 +7,8 @@ const Page = async () => {
     <>
       <div className="text-color-primary">
         <h3>Dashboard</h3>
-        <p>Welcome {user.name}</p>
-        <Image src={user.image} alt="..." width={250} height={250} />
+        <p>Welcome {user?.name}</p>
+        <Image src={user?.image} alt="..." width={250} height={250} />
       </div>
     </>
   );
